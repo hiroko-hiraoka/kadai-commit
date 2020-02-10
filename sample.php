@@ -1,3 +1,7 @@
+<?php
+    $result = "無し"
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -6,7 +10,7 @@
     </head>
     <body>
         <h1>おみくじ</h1>
-        <h2>おみくじの結果：無し</h2>
+        <h2>おみくじの結果：<?php print htmlspecialchars($result, ENT_QUOTES, "UTF-8"); ?></h2>
         <form action="sample.php"method="POST">
             <button type="submit" name="act" value="drow">おみくじをひく！</button>
         </form>
